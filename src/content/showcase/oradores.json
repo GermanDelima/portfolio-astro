@@ -1,0 +1,21 @@
+{
+  "title": "Bs As Conf",
+  "image": "/src/content/showcase/_images/oradores.png",
+  "icon1": "/src/content/showcase/_icon/devicon--javascript.png", 
+  "titleIcon1": "javascript",
+
+  "icon2": "/src/content/showcase/_icon/devicon--html5.png", 
+  "titleIcon2": "HTML5",
+
+  "icon3": "/src/content/showcase/_icon/devicon--css3.png",
+  "titleIcon3": "CSS3",
+
+  "icon4": "/src/content/showcase/_icon/devicon--bootstrap.png",
+  "titleIcon4": "bootstrap",
+
+   "icon5": "/src/content/showcase/_icon/vscode-icons--file-type-light-netlify.png",
+  "titleIcon5": "netlify",
+
+  "url": "https://bs-oradores.netlify.app/",
+  "featured": 2
+}

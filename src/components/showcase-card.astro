@@ -1,0 +1,109 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  site: CollectionEntry<"showcase">;
+}
+
+const { site } = Astro.props;
+
+const widths = [450, 800];
+const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
+---
+
+<a class="group aspect-video hover:!text-default" href={site.data.url} target="_blank">
+  <figure class="relative h-full w-full overflow-hidden">
+
+    
+    <Image
+      class="h-full w-full bg-cover object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20"
+      src={site.data.image}
+
+      widths={widths}
+      sizes={sizes}
+      alt={`A screenshot of ${site.data.url}`}
+    />
+
+   
+    <figcaption class="absolute inset-0">
+      <div
+        class="flex h-full flex-col items-center justify-start mt-1 p-5 gap-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100"
+      >
+        <h4 class="text-center font-extrabold uppercase text-sm/5 ">
+           {site.data.title} 
+        </h4>
+      
+        <div class="grid grid-cols-3 sm:grid-cols-3 p-0 pb-0">
+          <div class="flex flex-col items-center">
+            <Image
+              class="h-7 w-7"
+              src={site.data.icon1}
+              draggable="false"
+              alt=""
+            />
+            <p class="font-extrabold uppercase text-xs text-center">
+              {site.data.titleIcon1}
+            </p>
+          </div>
+          
+          <div class="flex flex-col items-center">
+            <Image
+              class="h-7 w-7"
+              src={site.data.icon2}
+              draggable="false"
+              alt=""
+            />
+            <p class="font-extrabold uppercase text-xs text-center">
+              {site.data.titleIcon2}
+            </p>
+          </div>
+          
+          <div class="flex flex-col items-center">
+            <Image
+              class="h-7 w-7"
+              src={site.data.icon3}
+              draggable="false"
+              alt=""
+            />
+            <p class="font-extrabold uppercase text-xs text-center">
+              {site.data.titleIcon3}
+            </p>
+          </div>
+          
+          <div class="flex flex-col items-center">
+            <Image
+              class="h-7 w-7"
+              src={site.data.icon4}
+              draggable="false"
+              alt=""
+            />
+            <p class="font-extrabold uppercase text-xs text-center">
+              {site.data.titleIcon4}
+            </p>
+          </div>
+          
+          <div class="flex flex-col items-center">
+            <Image
+              class="h-7 w-7"
+              src={site.data.icon5}
+              draggable="false"
+              alt=""
+            />
+            <p class="font-extrabold uppercase text-xs text-center">
+              {site.data.titleIcon5}
+            </p>
+          </div>
+        </div>
+        
+                 
+      </div>
+    </figcaption>
+  </figure>
+</a>
+
+<style>
+  h1{
+    background-color: rgb(139, 195, 74);
+  }
+</style>

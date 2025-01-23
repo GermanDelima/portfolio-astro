@@ -1,0 +1,121 @@
+---
+import CompatibilityList from "~/components/compatibility-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+
+
+const lenguajes: Array<CompatibilityItem> = [
+  {
+    title: "HTML",
+    icon: "lenguajes/html",
+    url: "#",
+  },
+  {
+    title: "CSS",
+    icon: "lenguajes/css",
+    url: "#",
+  },
+  {
+    title: "JavaScript",
+    icon: "lenguajes/javascript",
+    url: "#",
+  },
+  {
+    title: "Java",
+    icon: "lenguajes/java",
+    url: "#",
+  },
+  {
+    title: "MySQL",
+    icon: "lenguajes/mysql",
+    url: "#",
+  },
+
+];
+
+const frameworks: Array<CompatibilityItem> = [
+  {
+    title: "Spring",
+    icon: "frameworks/spring",
+    url: "https://spring.io/",
+  },
+  
+  {
+    title: "Angular",
+    icon: "frameworks/angular",
+    url: "https://angular.dev/overview",
+  },
+  {
+    title: "Astro",
+    icon: "frameworks/astro",
+    url: "https://astro.build/",
+  },
+  {
+    title: "tailwind",
+    icon: "frameworks/tailwind",
+    url: "https://tailwindcss.com/",
+  },
+  {
+    title: "Bootstrap",
+    icon: "frameworks/bootstrap",
+    url: "https://getbootstrap.com/",
+  },
+
+
+];
+
+const platforms: Array<CompatibilityItem> = [
+  {
+    title: "Netlify",
+    icon: "platforms/netlify",
+    url: "https://www.netlify.com/",
+  },
+  {
+    title: "Vercel",
+    icon: "platforms/vercel",
+    url: "https://vercel.com/",
+  },
+  {
+    title: "Cloudflare",
+    icon: "fa-brands:cloudflare",
+    url: "https://pages.cloudflare.com/",
+  },
+  {
+    title: "Render",
+    icon: "platforms/render",
+    url: "https://render.com/",
+  },
+  {
+    title: "GitHub",
+    icon: "fa-brands:github",
+    url: "https://pages.github.com/",
+  },
+];
+---
+
+<ContentSection title="Habilidades" id="compatibility">
+  <Fragment slot="lead">
+    Llevo la <span class="text-primary">innovación</span>. al siguiente nivel. Trae tu <span class="text-primary">proyecto </span> y le daré
+    <span class="text-primary">vida </span>con la <span class="text-primary">tecnología más avanzada.</span> Aquí tienes un vistazo a las
+    <span class="text-primary">herramientas </span> y <span class="text-primary">habilidades </span> que manejo para asegurar que tu proyecto sea
+    <span class="text-primary">único </span> y de <span class="text-primary">alta calidad.</span>
+  </Fragment>
+
+
+  <CompatibilityList
+  items={lenguajes}
+  title="lenguajes"
+  url=""
+/>
+  <CompatibilityList
+    items={frameworks}
+    title="Frameworks"
+    url=""
+  />
+  <CompatibilityList
+    items={platforms}
+    title="Platforms"
+    url=""
+  />
+
+</ContentSection>

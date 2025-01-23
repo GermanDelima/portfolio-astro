@@ -1,0 +1,22 @@
+{
+  "title": "Portfolio FullStack",
+  "image": "/src/content/showcase/_images/porfolioweb.png",
+  "icon1": "/src/content/showcase/_icon/devicon--java.png", 
+  "titleIcon1": "Java",
+
+  "icon2": "/src/content/showcase/_icon/bcxl--spring-boot.png", 
+  "titleIcon2": "Springboot",
+
+  "icon3": "/src/content/showcase/_icon/vscode-icons--file-type-angular.png",
+  "titleIcon3": "Angular",
+
+  "icon4": "/src/content/showcase/_icon/devicon--bootstrap.png",
+  "titleIcon4": "bootstrap",
+
+  "icon5": "/src/content/showcase/_icon/logos--mysql-icon.png",
+  "titleIcon5": "MYSQL",
+
+  "url": "https://github.com/GermanDelima/BackEnd",
+  "featured": 1
+}
+
